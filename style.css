@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+body{
+    background-color: hsl(210 46% 95%);
+}
+
+.daniel{
+    border-radius: 50%;
+    float: left;
+    margin: 1.4em 1em 0.5em 0.5em;
+    border: 2px solid #ffffff;
+}
+
+.grid-1{
+    background-color: hsl(263 55% 52%);
+    padding: 1rem;
+    border-radius: 14px;
+}
+
+.dani{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.first-lorem{
+    font-size:x-large;
+    font-weight: 600;
+}
+
+.grid-2{
+    background-color: hsl(217 19% 35%);
+    border-radius: 12px;
+    padding:1rem;
+}
+
+.jonathan{
+    border-radius: 50%;
+    margin: 1.5em 1em 0.5em 0.5em;
+    float: left;
+    border: 1px solid purple;
+}
+
+.jona{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.second-lorem{
+    font-size:x-large;
+    font-weight: 600;
+}
+
+.grid-3{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    padding:1rem;
+}
+
+.jeanette{
+    border-radius: 50%;
+    margin: 1.5em 1em 0.5em 0.5em;
+    float: left;
+    border: 1px solid purple;
+}
+
+.jean{
+    font-size: 1.3em;
+    font-weight: 700;
+    color: hsl(217 19% 35%);;
+}
+
+.jean-2{
+    color: hsl(217 19% 35%);
+    font-weight: bolder;
+}
+
+.third-lorem{
+    font-size:x-large;
+    font-weight: 600;
+    color: hsl(217 19% 35%);
+}
+
+.third-lorem-2{
+    color: hsl(217 19% 35%);
+}
+
+.grid-4{
+    background-color: hsl(219 29% 14%);
+    border-radius: 12px;
+    padding:1rem;
+}
+
+.patrick{
+    border-radius: 50%;
+    margin: 1.5em 1em 0.5em 0.5em;
+    float: left;
+    border: 1px solid purple;
+}
+
+.pat{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.fourth-lorem{
+    font-size:x-large;
+    font-weight: 600;
+}
+
+.grid-5{
+    background-color: #806763;
+    border-radius: 12px;
+    padding:1rem;
+}
+
+.kira{
+    border-radius: 50%;
+    margin: 1.5em 1em 0.5em 0.5em;
+    float: left;
+    border: 1px solid purple;
+}
+
+.kiki{
+    font-size: 1.3em;
+    font-weight: 700;
+    color: black;
+}
+
+.fifth-lorem{
+    font-size:x-large;
+    font-weight: 600;
+    color: black;
+}
+
+.fifth-lorem-2{
+    color: black;
+}
+
+.verified-graduate{
+    font-weight: bolder;
+}
+
+.kiki-2{
+    font-weight: bolder;
+    color: black;
+}
+
+.big-wrapper{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+}
+
+.testimonial:nth-child(1){
+    grid-area: one;
+}
+
+.testimonial:nth-child(2){
+    grid-area: two;
+}
+
+.testimonial:nth-child(3){
+    grid-area: three;
+}
+
+.testimonial:nth-child(4){
+    grid-area: four;
+}
+
+.testimonial:nth-child(5){
+    grid-area: five;
+}
+
+@media (min-width: 768px){
+    .big-wrapper{
+        grid-template-areas: 
+        'one one two'
+        'three four four'
+        'five five five';
+    }
+}
+
+@media (min-width: 1030px){
+    .big-wrapper{
+        grid-template-areas:
+        'one one two five'
+        'three four four five'
+    }
+}
